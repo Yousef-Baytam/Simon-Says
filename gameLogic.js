@@ -1,5 +1,5 @@
 
-const levelStep = () => {
+const levelStep = (steps) => {
     const step = Math.floor(Math.random() * 4) + 1
     step === 1 ? steps.push('one')
         : step === 2 ? steps.push('two')
@@ -7,4 +7,3 @@ const levelStep = () => {
                 : steps.push('four')
 }
 
-export { levelStep }
