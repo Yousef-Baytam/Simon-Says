@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+body div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+body div div {
+    background-color: aqua;
+    margin: 2em;
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+}
