@@ -54,3 +54,11 @@ body div div:hover {
     box-sizing: border-box;
     background-color: gray !important;
 }
+
+body div div:active {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.clicked {
+    background-color: black !important;
+}
