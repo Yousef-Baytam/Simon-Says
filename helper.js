@@ -24,4 +24,6 @@ const stepsPreview = (steps) => {
     }, 1000)
 }
 
-
+const verifyInput = (input, UserInputs) => {
+    return input === steps[UserInputs.length - 1]
+}
