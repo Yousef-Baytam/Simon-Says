@@ -21,16 +21,10 @@ for (let box of boxes) {
             return
         } else if (UserInputs.length === steps.length) {
             level++
-            e.target.id === 'one' ? green.play()
-                : e.target.id === 'two' ? blue.play()
-                    : e.target.id === 'three' ? yellow.play()
-                        : blue.play()
+            audio(e.target.id)
             start()
         }
-        e.target.id === 'one' ? green.play()
-            : e.target.id === 'two' ? blue.play()
-                : e.target.id === 'three' ? yellow.play()
-                    : blue.play()
+        audio(e.target.id)
     })
 }
 

@@ -7,6 +7,13 @@ const levelStep = (steps) => {
                 : steps.push('four')
 }
 
+const audio = () => {
+    divId === 'one' ? green.play()
+        : divId === 'two' ? blue.play()
+            : divId === 'three' ? yellow.play()
+                : blue.play()
+}
+
 const disableDivs = () => {
     for (let box of boxes)
         box.classList.add('disabled')
