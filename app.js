@@ -28,6 +28,7 @@ function play() {
     title.innerText = `Level ${ level }`
     UserInputs = []
     levelStep(steps)
+    disableDivs()
     stepsPreview(steps)
 }
 

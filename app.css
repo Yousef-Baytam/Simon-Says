@@ -62,3 +62,7 @@ body div div:active {
 .clicked {
     background-color: black !important;
 }
+
+.disabled {
+    pointer-events: none;
+}

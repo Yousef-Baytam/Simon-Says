@@ -7,6 +7,16 @@ const levelStep = (steps) => {
                 : steps.push('four')
 }
 
+const disableDivs = () => {
+    for (let box of boxes)
+        box.classList.add('disabled')
+}
+
+const enableDivs = () => {
+    for (let box of boxes)
+        box.classList.remove('disabled')
+}
+
 const stepsPreview = (steps) => {
     let box = {}
     let x = 0
@@ -22,6 +32,7 @@ const stepsPreview = (steps) => {
         if (x === steps.length)
             clearInterval(i)
     }, 1000)
+    setTimeout(enableDivs, steps.length * 1000)
 }
 
 const verifyInput = (input, UserInputs) => {
