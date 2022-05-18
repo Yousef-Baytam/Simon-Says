@@ -22,7 +22,7 @@ body div {
 }
 
 body div div {
-    background-color: magenta;
+    background-color: green;
     margin: 2em;
     width: 150px;
     height: 150px;
@@ -35,11 +35,11 @@ body div:nth-of-type(1) div:nth-of-type(2) {
 }
 
 body div:nth-of-type(2) div:nth-of-type(1) {
-    background-color: blue;
+    background-color: yellow;
 }
 
 body div:nth-of-type(2) div:nth-of-type(2) {
-    background-color: green;
+    background-color: blue;
 }
 
 
