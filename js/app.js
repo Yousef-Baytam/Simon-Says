@@ -10,14 +10,21 @@ const yellow = new Audio("http://127.0.0.1:5500/assets/yellow.mp3")
 const blue = new Audio("http://127.0.0.1:5500/assets/blue.mp3")
 const wrong = new Audio("http://127.0.0.1:5500/assets/wrong.mp3")
 
-body.addEventListener('click', start, { once: true })
+const listen = () => {
+    steps = []
+    level = 1
+    body.addEventListener('keypress', start, { once: true })
+}
+listen()
 
 for (let box of boxes) {
     box.addEventListener('click', (e) => {
         UserInputs.push(e.target.id)
         if (!verifyInput(e.target.id, UserInputs)) {
-            title.innerText = `You lose! Your score is ${ level }`
+            title.innerText = `Game Over, Press any key to restart`
             disableDivs()
+            wrong.play()
+            listen()
             return
         } else if (UserInputs.length === steps.length) {
             level++
