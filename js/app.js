@@ -4,11 +4,16 @@ const body = document.querySelector('body')
 let steps = []
 let level = 1
 let UserInputs = []
-const green = new Audio("https://github.com/Yousef-Baytam/Simon-Says/blob/main/assets/green.mp3")
-const red = new Audio("https://github.com/Yousef-Baytam/Simon-Says/blob/main/assets/red.mp3")
-const yellow = new Audio("https://github.com/Yousef-Baytam/Simon-Says/blob/main/assets/yellow.mp3")
-const blue = new Audio("https://github.com/Yousef-Baytam/Simon-Says/blob/main/assets/blue.mp3")
-const wrong = new Audio("https://github.com/Yousef-Baytam/Simon-Says/blob/main/assets/wrong.mp3")
+const green = document.createElement('audio')
+green.src = './assets/green.mp3'
+const red = document.createElement('audio')
+red.src = './assets/red.mp3'
+const yellow = document.createElement('audio')
+yellow.src = './assets/yellow.mp3'
+const blue = document.createElement('audio')
+blue.src = './assets/blue.mp3'
+const wrong = document.createElement('audio')
+wrong.src = './assets/wrong.mp3'
 
 const listen = () => {
     steps = []
