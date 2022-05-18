@@ -16,6 +16,7 @@ for (let box of boxes) {
         // console.log(verifyInput(e.target.id, UserInputs))
         if (!verifyInput(e.target.id, UserInputs)) {
             title.innerText = `You lose! Your score is ${ level }`
+            disableDivs()
             return
         } else if (UserInputs.length === steps.length) {
             level++
