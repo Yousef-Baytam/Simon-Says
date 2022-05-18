@@ -15,7 +15,7 @@ for (let box of boxes) {
         // console.log(steps[UserInputs.length - 1])
         // console.log(verifyInput(e.target.id, UserInputs))
         if (!verifyInput(e.target.id, UserInputs)) {
-            title.innerText = `You lose!`
+            title.innerText = `You lose! Your score is ${ level }`
             return
         } else if (UserInputs.length === steps.length) {
             level++
