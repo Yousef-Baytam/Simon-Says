@@ -9,7 +9,7 @@ const levelStep = (steps) => {
 
 const audio = (divId) => {
     divId === 'one' ? green.play()
-        : divId === 'two' ? blue.play()
+        : divId === 'two' ? red.play()
             : divId === 'three' ? yellow.play()
                 : blue.play()
 }
